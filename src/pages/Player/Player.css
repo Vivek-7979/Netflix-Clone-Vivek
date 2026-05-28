@@ -1,0 +1,32 @@
+.player{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.player img{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 50px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+.player-iframe{
+    border-radius: 10px;
+
+}
+.player-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 10px;
+
+}
+
+
+
+/* This tmdb breare link is too secret because it is used to fetch the data from the tmdb api and if it is leaked then anyone can use it to fetch the data from the tmdb api and it can cause a lot of problems for the project. So, it is better to keep it secret and not to share it with anyone. */
+/* eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3Y2IxNWM2ODRjYjY5YWU4MmQ1MWQ4YTllNWE5Mzc2NCIsIm5iZiI6MTc3OTM0NzA2OC4zNjYwMDAyLCJzdWIiOiI2YTBlYWU3YzEwNmZiNmI4Njg0NjIwNjEiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.eYM3ieq2-mpoERK9SwZ7yNg90-7-mliUYAlQGo8ErrQ */

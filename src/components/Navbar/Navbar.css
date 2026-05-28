@@ -1,0 +1,137 @@
+/* styles the navbar both divs */
+.navbar{
+    width: 100%;
+    padding: 0px 6%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    font-size: 14px;
+    color: #e5e5e5;
+    background-image: linear-gradient(180deg, rgba(0,0,0,0.7) 10%, transparent);
+    z-index: 1000;
+}
+
+/* manipulates the svg icons */
+.logo{
+    filter: brightness(1.5) contrast(3);
+    min-width: 60px;
+}
+.icons{
+    width: 10vw;
+    max-width: 28px;
+    
+    filter: invert(100%) sepia(0%) saturate(0%) brightness(200%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* the png image of the netflix account */
+.accountimage{
+    width: 5vw;
+    max-width: 28px;
+    height: auto;
+    border-radius: 8%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar-left{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.navbar-left ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.navbar-left ul li{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-right .accountimage,
+.navbar-right .icons,
+.navbar-right p{
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar-profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.profile-trigger{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.signout-text{
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: auto;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    z-index: 100;
+}
+
+.navbar-profile:hover
+ .signout-text,
+.signout-text:hover {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+/* while scrolling down the page the navbar will become darker */
+.nav-dark{
+    text-decoration: underline;
+    background-color: #141414;
+}
+
+@media (max-width:800px) {
+    .navbar{
+        padding:20px 4%;
+    }
+    .navbar-left ul{
+        display: none;
+    }
+    .navbar img{
+        height:25px
+    }
+    
+}
+@media (max-width:500px) {
+    .navbar img {
+        height: 20px;
+        
+    }
+    .navbar right{
+        gap:10px;
+    }
+  
+ 
+    
+}

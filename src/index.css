@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* This makes the whole body's intial values of margin or padding zero */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* It changes the whole webpages body into bg color black and text white */
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* 3.) To Apply the netflix logo in icon paste the favicon.ico of netflix into index.html head with rel=icon link and it will apppear on the webpage starting */
+
+/* 4.) Creating the file-folder structure for the project : 
+
+(i) Create a folder named "components" in the src folder .
+
+(ii)  Then , create a folder named Pages in the components folder inside that Pages folder create
+      three folder : a) Home b) Login c) Player
+Then inside all of them create a jsx file name its div their respective name then create the css file in that folder and link it with the jsx file .
+
+(iii) Then create 3 more folders inside the compoents folder : a) Navbar b) Footer c) Title cards
+Then inside all of them create a jsx file name its div their respective name then create the css file in that folder and link it with the jsx file .
+
+(iv)Import the navbar inside the Home component
+
+(v)Import the Home components in the app.jsx file
+
+NOTE :  Import the jsx builtin code by typing ' rafce '
+       Write the starting letter or every folder and file CAPTIAL*/

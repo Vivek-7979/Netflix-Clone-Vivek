@@ -1,0 +1,132 @@
+/* the whole login page css file with bg one image */
+.login{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.70), rgba(0,0,0,0.70)), url(/mainimagess.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0px 8%;
+}
+
+/* the svg styling */
+.login-logo{
+    width: 150px;
+    display: block;
+    margin-bottom: -30px;
+    filter: brightness(1.2) contrast(1.3) drop-shadow(0 0 0px rgba(255,255,255,0.35));
+}
+.login-form{
+    width: 100%;
+    max-width: 450px;
+    max-height: 600px;
+    background: rgba(0,0,0,0.75);
+    border-radius: 4px;
+    padding: 60px;
+    margin: auto;
+}
+.login-form h1{
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 28px;
+}
+.login-form input{
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color: white;
+    margin: 12px 0;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    padding: 16px 20px;
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.login-form input ::placeholder{
+    font-size: 16px;
+font-weight: 500;
+    
+}
+
+.login-form button{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 16px;
+    background: #e50914;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+
+}
+.login-form button:hover{
+    background: rgba(255,0,0,0.6);
+}
+
+
+.form-help{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #b3b3b3;
+    font-size: 13px;
+
+}
+
+
+.remember{
+    display: flex;
+    align-items: center;
+    gap: 5px;}
+
+
+
+
+.remember input{
+    width: 18px;
+    height: 18px;
+}
+
+
+
+.form-switch{
+    margin-top: 40px;
+    color:#737373 ;
+}
+.form-switch span{
+    margin-left:6px ;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+
+.login-spinner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-spinner img {
+    width: 300px;
+}
+
+@media (max-width:500px) {
+    .login{
+        padding: 15px 5%;
+    }
+    .login-form{
+        padding: 20px;
+        margin-top: 30px;
+    }
+    
+}
